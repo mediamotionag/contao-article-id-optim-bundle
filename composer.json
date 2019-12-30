@@ -1,0 +1,47 @@
+{
+  "name": "mediamotionag/contao-article-id-optim-bundle",
+  "homepage": "https://github.com/mediamotionag/contao-article-id-optim-bundle",
+  "description":"Article CSS-ID Frontend Output Optimization",
+  "keywords":["contao", "contao4", "contao-bundle", "frontend", "id", "css", "hash", "output", "article"],
+  "type": "contao-bundle",
+  "license": "LGPL-3.0+",
+  "authors": [
+    {
+      "name": "Media Motion AG",
+      "homepage": "https://www.mediamotion.ch/",
+      "role": "Developer"
+    }
+  ],
+  "support":{
+    "email":"ticket@memo.support",
+    "issues":"https://github.com/mediamotionag/contao-article-id-optim-bundle/issues",
+    "source":"https://github.com/mediamotionag/contao-article-id-optim-bundle"
+  },
+  "require": {
+    "php": ">=5.6.0",
+    "contao/core-bundle": "^4.4"
+  },
+  "require-dev": {
+    "contao/manager-plugin": "^2.0"
+  },
+  "conflict": {
+    "contao/manager-plugin": "<2.0 || >=3.0"
+  },
+  "extra": {
+    "contao-manager-plugin": "Memo\\ArticleIDOptimBundle\\ContaoManager\\Plugin"
+  },
+  "autoload": {
+    "psr-4": {
+      "Memo\\ArticleIDOptimBundle\\": "src/"
+    },
+    "classmap": [
+      "src/Resources/contao/"
+    ],
+    "exclude-from-classmap": [
+      "src/Resources/contao/config/",
+      "src/Resources/contao/dca/",
+      "src/Resources/contao/languages/",
+      "src/Resources/contao/templates/"
+    ]
+  }
+}

@@ -1,0 +1,3 @@
+services:
+    article_id_optim.hook_listener:
+        class: Memo\ArticleIDOptimBundle\Service\HookListener
