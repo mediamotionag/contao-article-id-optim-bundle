@@ -9,4 +9,4 @@
  * @author    Rory Zünd, Media Motion AG
  */
 
-$GLOBALS['TL_HOOKS']['compileArticle'][] = array('article_id_optim.hook_listener', 'SetArticleID');
+$GLOBALS['TL_HOOKS']['compileArticle'][] = array('Memo\ArticleIDOptimBundle\Service\HookListener', 'SetArticleID');

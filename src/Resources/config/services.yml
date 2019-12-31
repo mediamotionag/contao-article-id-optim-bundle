@@ -1,3 +1,8 @@
 services:
+  _instanceof:
+    Contao\CoreBundle\Framework\FrameworkAwareInterface:
+      calls:
+        - ['setFramework', ['@contao.framework']]
+
     article_id_optim.hook_listener:
         class: Memo\ArticleIDOptimBundle\Service\HookListener
